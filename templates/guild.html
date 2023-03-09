@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/guild.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getOption(option) {
+        if (option.value === "disable-slct") { return document.querySelector(".whenEnabled").hidden = true }
+        else { return document.querySelector(".whenEnabled").hidden = false }
+        }
+    </script>
+    <nav>
+        <label class="Logo">Jarvis-bot</label>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/cmd.htm">Commands</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/policy.htm">Policy</a></li>
+            <li><a href="#"><img src="https://cdn.discordapp.com/avatars/{{userdata['id']}}/{{userdata['avatar']}}.png" alt="icon" class="user-img"></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
